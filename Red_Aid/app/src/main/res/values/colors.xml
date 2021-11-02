@@ -7,4 +7,22 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Base application colors. -->
+    <color name="red_aid_red_700">#DD003C</color>
+    <color name="red_aid_red_500">#FA376C</color>
+    <color name="red_aid_red_200">#EE809D</color>
+    <color name="red_aid_red_100">#FFF3F3</color>
+    <color name="red_aid_green_700">#008575</color>
+    <color name="red_aid_green_500">#3C9F9C</color>
+    <color name="red_aid_green_200">#A9E1E0</color>
+    <color name="red_aid_green_100">#F1FFFD</color>
+    <color name="red_aid_light_green_700">#05FD8A</color>
+    <color name="red_aid_orange_700">#FF725E</color>
+    <color name="red_aid_purple_700">#3D306B</color>
+    <color name="red_aid_purple_200">#7978DC</color>
+    <color name="red_aid_black_700">#000000</color>
+    <color name="red_aid_black_500">#353535</color>
+    <color name="red_aid_black_200">#515151</color>
+    <color name="red_aid_black_100">#F6F6F6</color>
 </resources>

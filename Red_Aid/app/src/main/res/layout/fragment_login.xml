@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/loginToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="@color/black"
+        app:title="Login/Sign up"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/TextAppearance.MyApp.SubHeading" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/red_aid_black_100"
+        android:elevation="1.5dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="80sp" />
+
+    <TextView
+        style="@style/TextAppearance.MyApp.Heading3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Welcome!"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/TextAppearance.MyApp.BodyBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24sp"
+        android:layout_marginTop="30sp"
+        android:text="Please Enter Your Mobile Number"
+        android:textColor="@color/red_aid_black_500" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24sp"
+        android:layout_marginTop="4sp"
+        android:backgroundTint="@color/red_aid_black_500"
+        app:boxStrokeColor="@color/red_aid_black_200"
+        app:hintEnabled="false"
+        app:prefixText="+91"
+        app:prefixTextAppearance="@style/TextAppearance.MyApp.BodyBold">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="0000000000" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24sp"
+        android:layout_marginTop="40sp"
+        android:backgroundTint="@color/red_aid_red_200"
+        android:paddingVertical="16sp"
+        android:text="GET OTP"
+        android:textAppearance="@style/TextAppearance.MyApp.Button1"
+        android:textColor="@color/white"
+        app:cornerRadius="4sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        style="@style/TextAppearance.MyApp.BodyBold"
+        android:layout_marginHorizontal="24sp"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:textColorLink="@color/red_aid_red_700"
+        android:text="@string/terms_of_services_and_privacy_policy" />
+
+
+</LinearLayout>
