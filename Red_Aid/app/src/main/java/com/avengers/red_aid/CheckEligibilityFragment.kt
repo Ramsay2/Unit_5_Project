@@ -31,7 +31,7 @@ class CheckEligibilityFragment : Fragment() {
     private fun lastBloodDonation(view: View){
         val lastBlood = view.resources.getStringArray(R.array.LastBloodDonation)
         val arrayAdapter = context?.let { ArrayAdapter(it,R.layout.dropdown_layout,lastBlood) }
-        val autocompleteTV = view.findViewById<AutoCompleteTextView>(R.id.tvAutoComplete)
+        val autocompleteTV = view.findViewById<AutoCompleteTextView>(R.id.etLastBloodDonation)
         autocompleteTV?.setAdapter(arrayAdapter)
     }
 

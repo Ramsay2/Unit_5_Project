@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <LinearLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -178,7 +180,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:buttonTint="@color/red_aid_red_200"
+            android:buttonTint="@color/red_aid_red_700"
             android:text="The above information is true to my knowledge and belief." />
 
         <com.google.android.material.button.MaterialButton
