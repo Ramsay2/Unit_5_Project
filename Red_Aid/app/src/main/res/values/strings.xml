@@ -2,4 +2,15 @@
     <string name="app_name">Red_Aid</string>
     <string name="terms_of_services_and_privacy_policy">By proceeding, you agree to our \n <br><a href="Terms of Services">Terms of Services</a> and <a href="Privacy Policy">Privacy Policy</a></br></string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="LastBloodDonation">
+        <item>Less than 3 months</item>
+        <item>Less than 6 months</item>
+        <item>More than 6 months</item>
+    </string-array>
+    <string-array name="Tattoo">
+        <item>Yes</item>
+        <item>No</item>
+
+    </string-array>
 </resources>

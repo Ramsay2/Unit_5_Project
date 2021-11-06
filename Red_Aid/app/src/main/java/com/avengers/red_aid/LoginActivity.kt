@@ -9,8 +9,9 @@ import androidx.core.graphics.drawable.toDrawable
 import com.google.android.material.appbar.MaterialToolbar
 
 class LoginActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_check_eligibility)
     }
 }
