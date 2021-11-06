@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<com.google.android.material.textview.MaterialTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:textColor="#353535"
+    android:background="@drawable/text_background"
+    android:padding="14dp"
+    android:layout_height="wrap_content"
+
+    android:text="TextView" >
+
+</com.google.android.material.textview.MaterialTextView>
