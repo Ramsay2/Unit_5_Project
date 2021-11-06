@@ -49,7 +49,7 @@
                 app:boxStrokeColor="@color/red_aid_green_200">
 
                 <AutoCompleteTextView
-                    android:id="@+id/tvAutoComplete"
+                    android:id="@+id/etLastBloodDonation"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="none" />
@@ -143,6 +143,7 @@
                 android:weightSum="2">
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPregnancy"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -155,6 +156,7 @@
                     app:strokeColor="@color/red_aid_green_200" />
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLactation"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -171,7 +173,8 @@
         </LinearLayout>
 
         <com.google.android.material.checkbox.MaterialCheckBox
-            android:id="@+id/checkbox_meat"
+
+            android:id="@+id/checkboxTrue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
@@ -179,6 +182,7 @@
             android:text="The above information is true to my knowledge and belief." />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCheck"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
