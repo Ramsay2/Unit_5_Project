@@ -1,12 +1,8 @@
-package com.avengers.red_aid
+package com.avengers.red_aid.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import android.widget.Toolbar
-import androidx.core.graphics.drawable.toDrawable
-import com.google.android.material.appbar.MaterialToolbar
+import com.avengers.red_aid.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

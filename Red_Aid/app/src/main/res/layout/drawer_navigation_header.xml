@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    android:paddingTop="?android:attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/tvDrawerTitle"
+        style="@style/TextAppearance.MyApp.Heading3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_hamburger"
+        android:drawableEnd="@drawable/ic_close"
+        android:drawablePadding="20dp"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:text="Menu"
+        android:textColor="@color/red_aid_black_700" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvDrawerTitle"
+        android:layout_marginTop="10dp"
+        android:background="@color/red_aid_black_500" />
+
+</RelativeLayout>

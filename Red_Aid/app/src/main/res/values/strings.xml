@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Red_Aid</string>
     <string name="terms_of_services_and_privacy_policy">By proceeding, you agree to our \n <br><a href="Terms of Services">Terms of Services</a> and <a href="Privacy Policy">Privacy Policy</a></br></string>
+    <string name="Open_Drawer">Open Navigation Drawer</string>
+    <string name="Close_Drawer">Close Navigation Drawer</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
