@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/trackDonations"
+        android:icon="@drawable/ic_track"
+        android:title="Track donations">
+
+    </item>
+
+    <item
+        android:id="@+id/rewards"
+        android:icon="@drawable/ic_rewards"
+        android:title="Rewards">
+
+    </item>
+
+    <item
+        android:id="@+id/register"
+        android:icon="@drawable/ic_register"
+        android:title="Register as a donor">
+
+    </item>
+
+    <item
+        android:id="@+id/previousRequirements"
+        android:icon="@drawable/ic_previos_requirements"
+        android:title="Previous Blood Requirements">
+
+    </item>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings">
+
+    </item>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout">
+
+    </item>
+</menu>

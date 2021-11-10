@@ -1,25 +1,20 @@
-package com.avengers.red_aid
+package com.avengers.red_aid.views
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.avengers.red_aid.databinding.FragmentHomeBinding
+import com.avengers.red_aid.R
 
-
-class HomeFragment : Fragment() {
-    private  lateinit var homeBinding: FragmentHomeBinding
+class OnBoardingFragment4 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        homeBinding = FragmentHomeBinding.inflate(layoutInflater)
-
+    ): View? {
         // Inflate the layout for this fragment
-        return homeBinding.root
+        return inflater.inflate(R.layout.fragment_on_boarding4, container, false)
     }
-
 
 }
