@@ -30,8 +30,6 @@ class CheckEligibilityFragment : Fragment() {
 
     }
 
-
-
     private fun lastBloodDonation(view: View) {
         lastBloodDonatedArray = resources.getStringArray(R.array.LastBloodDonation)
         val lastBlood = view.resources.getStringArray(R.array.LastBloodDonation)

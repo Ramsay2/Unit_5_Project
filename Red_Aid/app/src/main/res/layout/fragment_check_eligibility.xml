@@ -48,6 +48,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                
                 app:boxStrokeColor="@color/red_aid_green_200">
 
                 <AutoCompleteTextView
