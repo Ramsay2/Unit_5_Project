@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".views.TrackingFragment">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/map_tracking"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="18sp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="-30dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvTrackingDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="48dp"
+                    android:layout_marginTop="32dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/red_aid_black_700"
+                    android:text="Required Blood will be safely delivery within 30 minutes"
+                    style="@style/TextAppearance.MyApp.BodyBold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"
+                    android:layout_below="@+id/tvTrackingDetails"
+                    android:background="@drawable/delivery_boy"/>
+
+                <TextView
+                    android:id="@+id/tvTrackingRequestId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="96dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_above="@id/tvTrackingCallUs"
+                    android:textAlignment="center"
+                    android:textColor="@color/red_aid_black_700"
+                    android:text="Your request Id - 2937676855"
+                    style="@style/TextAppearance.MyApp.BodyBold"/>
+
+                <TextView
+                    android:id="@+id/tvTrackingCallUs"
+                    style="@style/TextAppearance.MyApp.Button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="104dp"
+                    android:layout_marginBottom="62dp"
+                    android:text="@string/call_us"
+                    android:textAlignment="center"
+                    android:textColor="@color/red_aid_black_700"
+                    android:textColorLink="@android:color/holo_blue_dark" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</layout>
