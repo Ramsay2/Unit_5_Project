@@ -79,7 +79,6 @@ class CheckEligibilityFragment : Fragment() {
                     btnCheck.setBackgroundColor(btnCheck.context.resources.getColor(R.color.red_aid_red_700))
                 else
                     btnCheck.setBackgroundColor(btnCheck.context.resources.getColor(R.color.red_aid_red_200))
-
             }
 
             var checkLactation = 1

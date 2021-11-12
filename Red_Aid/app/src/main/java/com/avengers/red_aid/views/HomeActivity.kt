@@ -1,6 +1,6 @@
 package com.avengers.red_aid.views
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -43,13 +43,13 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun onClickOperations() {
 
-        ivMenu.setOnClickListener(View.OnClickListener {
+        ivMenu.setOnClickListener {
             drawer_layout.openDrawer(GravityCompat.START)
-        })
+        }
 
-        ivSearch.setOnClickListener(View.OnClickListener {
+        ivSearch.setOnClickListener {
             Toast.makeText(this, "Profile Clicked", Toast.LENGTH_SHORT).show()
-        })
+        }
     }
 
 

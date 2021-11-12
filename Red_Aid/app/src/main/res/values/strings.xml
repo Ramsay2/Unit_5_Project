@@ -10,6 +10,17 @@
         <item>Less than 6 months</item>
         <item>More than 6 months</item>
     </string-array>
+
+    <string-array name="BloodGroup">
+        <item>A+</item>
+        <item>O+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>O-</item>
+        <item>B-</item>
+        <item>AB-</item>
+    </string-array>
     <string-array name="Tattoo">
         <item>Yes</item>
         <item>No</item>
