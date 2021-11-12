@@ -78,9 +78,16 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/bottomNavigation"
+            android:layout_above="@+id/bottomNavigationContainer"
             android:layout_below="@+id/layoutTopBar" />
 
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bottomNavigationContainer"
+            android:layout_width="match_parent"
+            android:elevation="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomNavigation"
                 android:layout_alignParentBottom="true"
@@ -89,6 +96,7 @@
                 android:background="?android:attr/windowBackground"
                 android:paddingVertical="5dp"
                 app:menu="@menu/bottom_navigation" />
+        </com.google.android.material.card.MaterialCardView>
 
     </RelativeLayout>
 
