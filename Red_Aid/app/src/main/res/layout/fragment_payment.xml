@@ -128,7 +128,7 @@
                     android:id="@+id/viewDebitCardMenuExpanded"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="gone">
+                    android:visibility="visible">
 
                     <EditText
                         android:id="@+id/etCardNumber"
@@ -168,7 +168,7 @@
                         android:layout_marginEnd="40dp"
                         android:layout_marginBottom="16dp"
                         android:background="@drawable/ic_bg_edit_text_payment_white"
-                        android:drawableEnd="@drawable/ic_upi"
+                        android:drawableEnd="@drawable/ic_card_cvv"
                         android:hint="CVV *"
                         android:inputType="number"
                         android:lines="1"
