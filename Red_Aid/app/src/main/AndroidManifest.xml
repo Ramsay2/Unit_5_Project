@@ -19,7 +19,7 @@
             android:name=".views.LoginActivity"
             android:exported="true"></activity>
         <activity
-            android:name=".CheckEligibilityActivity"
+            android:name=".views.CheckEligibilityActivity"
             android:exported="true"></activity>
         <activity
             android:name=".views.SplashActivity"

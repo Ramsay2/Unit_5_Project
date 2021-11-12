@@ -6,11 +6,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".CheckEligibilityActivity">
+        tools:context=".views.CheckEligibilityActivity">
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentCheckEligibility"
-            android:name="com.avengers.red_aid.CheckEligibilityFragment"
+            android:name="com.avengers.red_aid.views.CheckEligibilityFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
