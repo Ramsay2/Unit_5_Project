@@ -11,6 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import com.avengers.red_aid.R
 
@@ -35,27 +37,25 @@ class OtpFragment : Fragment() {
             val intent = Intent(context, HomeActivity::class.java)
             startActivity(intent)
         }
-        mOtpField4?.addTextChangedListener {
-            object : TextWatcher {
-                override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                }
+        mOtpField4!!.addTextChangedListener(object : TextWatcher {
 
-                override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                    if (p0.toString().isNotEmpty()) {
-                        mBtnVerify!!.isClickable = true
-                        Log.d("TAG", "onTextChanged: changed")
-                        mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_700))
-                    } else {
-                        mBtnVerify!!.isClickable = false
-                        mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_200))
-                    }
-                }
+            override fun afterTextChanged(s: Editable) {}
 
-                override fun afterTextChanged(p0: Editable?) {
-                }
-
+            override fun beforeTextChanged(s: CharSequence, start: Int,
+                                           count: Int, after: Int) {
             }
-        }
+
+            override fun onTextChanged(s: CharSequence, start: Int,
+                                       before: Int, count: Int) {
+                if (s.isNotEmpty()) {
+                    mBtnVerify!!.isClickable = true
+                    mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_700))
+                } else {
+                    mBtnVerify!!.isClickable = false
+                    mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_200))
+                }
+            }
+        })
     }
 
     private fun setViews(view: View) {

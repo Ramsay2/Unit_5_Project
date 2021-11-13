@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvCardNotification"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/ivNotificationNew"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignTop="@+id/tvNotificationName"
+        android:layout_width="wrap_content"
+        android:background="@drawable/ic_new_notification"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvNotificationName"
+        android:layout_toEndOf="@id/ivNotificationNew"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Sonu Sudharsan accepted your request and sent you a message."
+        style="@style/TextAppearance.MyApp.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvNotificationSee"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="See message"
+        android:maxLines="1"
+        android:layout_marginHorizontal="32dp"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/ic_arrow_see_message"
+        android:layout_marginVertical="16dp"
+        android:layout_below="@id/tvNotificationName"
+        android:textColor="@color/red_aid_red_500"
+        style="@style/TextAppearance.MyApp.Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/red_aid_black_100"
+        android:layout_below="@id/tvNotificationSee"/>
+
+</RelativeLayout>

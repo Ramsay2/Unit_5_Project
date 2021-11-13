@@ -86,13 +86,14 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 R.id.nav_chats -> {
                     badgeDrawableChat?.clearNumber()
                     badgeDrawableChat?.isVisible = false
-                    selectedFragment = HomeFragment()
+                    selectedFragment = ChatFragment()
                 }
-                R.id.nav_support -> HomeFragment()
+                R.id.nav_support ->
+                    selectedFragment = HomeFragment()
                 R.id.nav_notification -> {
                     badgeDrawableNotification?.clearNumber()
                     badgeDrawableNotification?.isVisible = false
-                    selectedFragment = HomeFragment()
+                    selectedFragment = NotificationFragment()
                 }
                 else -> HomeFragment()
             }
