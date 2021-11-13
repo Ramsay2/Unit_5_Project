@@ -31,6 +31,11 @@ class CheckEligibilityFragment : Fragment() {
         tattoo(view)
         boxColor()
 
+
+        checkEligibilityFragment.btnCheck.setOnClickListener {
+            val navController = Navigation.findNavController(view)
+            navController.navigate(R.id.action_checkEligibilityFragment_to_eligibleFragment)
+        }
     }
 
     private fun lastBloodDonation(view: View) {

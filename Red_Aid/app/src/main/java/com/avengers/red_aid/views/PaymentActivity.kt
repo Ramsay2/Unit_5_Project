@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.avengers.red_aid.R
 
-class RequirementDetailsActivity : AppCompatActivity() {
+class PaymentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_requirement_details)
-
-
+        setContentView(R.layout.activity_payment)
     }
 }

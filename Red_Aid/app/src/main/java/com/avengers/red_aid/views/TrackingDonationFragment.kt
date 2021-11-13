@@ -10,6 +10,7 @@ import com.avengers.red_aid.R
 import com.avengers.red_aid.databinding.FragmentPaymentBinding
 import com.avengers.red_aid.databinding.FragmentTrackingBinding
 import com.avengers.red_aid.databinding.FragmentTrackingDonationBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class TrackingDonationFragment : Fragment() {
@@ -27,9 +28,36 @@ class TrackingDonationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        trackingDonationFragment.bottomNavigation.setOnClickListener {
-            val intent = Intent(activity, HomeActivity::class.java)
-            startActivity(intent)
-        }
+
+
+        trackingDonationFragment.bottomNavigation.setOnNavigationItemSelectedListener(navListener)
+
     }
+    private val navListener =
+        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home ->
+                {
+                    val intent = Intent(activity, HomeActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.nav_chats -> {
+                    val intent = Intent(activity, HomeActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.nav_support ->{
+                    val intent = Intent(activity, HomeActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.nav_notification -> {
+                    val intent = Intent(activity, HomeActivity::class.java)
+                    startActivity(intent)
+                }
+                else -> {
+                    val intent = Intent(activity, HomeActivity::class.java)
+                    startActivity(intent)
+                }
+            }
+            false
+        }
 }

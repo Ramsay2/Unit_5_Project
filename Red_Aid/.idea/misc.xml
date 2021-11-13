@@ -4,10 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15864978902953586" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.10521172638436482" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_arrow_back.xml" value="0.15864978902953586" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_arrow_see_message.xml" value="0.10521172638436482" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.15864978902953586" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.10521172638436482" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_baseline_check_circle_outline_24.xml" value="0.10521172638436482" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.10521172638436482" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_baseline_crop_square_24.xml" value="0.10521172638436482" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.15864978902953586" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_bg_edit_text_payment_white.xml" value="0.10521172638436482" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_card.xml" value="0.10521172638436482" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_card_cvv.xml" value="0.10521172638436482" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_chat_activity.xml" value="0.11666666666666667" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_chat_profile.xml" value="0.10521172638436482" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_chats.xml" value="0.10521172638436482" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_circle_tracking_donation.xml" value="0.11666666666666667" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_close.xml" value="0.12247557003257328" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_direction_right.xml" value="0.10521172638436482" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_drop_down.xml" value="0.10521172638436482" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_frame_blood_donate.xml" value="0.12247557003257328" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_frame_blood_donate_two.xml" value="0.12247557003257328" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_frame_donate_blood.xml" value="0.1606837606837607" />
@@ -17,11 +32,17 @@
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/radio_button.xml" value="0.15864978902953586" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/text_background.xml" value="0.15864978902953586" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout-v28/fragment_check_eligibility.xml" value="0.16666666666666666" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_apoointbook.xml" value="0.11348684210526316" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_booking.xml" value="0.11348684210526316" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_check_eligibility.xml" value="0.14743589743589744" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_get_blood.xml" value="0.11348684210526316" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_home.xml" value="0.10384615384615385" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_login.xml" value="0.1398148148148148" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_payment.xml" value="0.11348684210526316" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_requirement_details.xml" value="0.11348684210526316" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_splash.xml" value="0.10384615384615385" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_track_donation.xml" value="0.10460526315789474" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_tracking_driver.xml" value="0.10460526315789474" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/appointmentlayout.xml" value="0.11348684210526316" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/drawer_navigation_header.xml" value="0.10384615384615385" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/dropdown_layout.xml" value="0.14743589743589744" />
@@ -30,55 +51,23 @@
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_eligible.xml" value="0.13333333333333333" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_home.xml" value="0.12" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_login.xml" value="0.1796875" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_mapview.xml" value="0.1" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.10384615384615385" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_on_boarding4.xml" value="0.13333333333333333" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_otp.xml" value="0.12927631578947368" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_payment.xml" value="0.10902777777777778" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_request_blood.xml" value="0.16666666666666666" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_tracking.xml" value="0.11348684210526316" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_tracking_donation.xml" value="0.16666666666666666" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/layout.xml" value="0.1" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/activated_pager_dot.xml" value="0.10683760683760683" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.1606837606837607" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/default_pager_dot.xml" value="0.10683760683760683" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/ic_arrow_back.xml" value="0.15864978902953586" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/ic_card.xml" value="0.1606837606837607" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/ic_card_cvv.xml" value="0.1606837606837607" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/ic_chat_activity.xml" value="0.1" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/ic_close.xml" value="0.10512820512820513" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/ic_logo_with_text.xml" value="0.1606837606837607" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/on_boarding_pager_dot_activated.xml" value="0.15864978902953586" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/on_boarding_pager_dot_default.xml" value="0.15864978902953586" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/on_boarding_pager_dot_selected.xml" value="0.15864978902953586" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/on_boarding_tab_selector.xml" value="0.15864978902953586" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/selected_pager_dot.xml" value="0.10683760683760683" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/tab_on_boarding_selector.xml" value="0.15864978902953586" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/drawable/tab_pager_selector.xml" value="0.1606837606837607" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/font/open_sans_bold.xml" value="0.1" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/font/styles.xml" value="0.17222222222222222" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/activity_check_eligibility.xml" value="0.14743589743589744" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/activity_home.xml" value="0.14743589743589744" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/activity_individiual_chat.xml" value="0.12" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/activity_on_boarding.xml" value="0.13333333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/activity_splash.xml" value="0.14666666666666667" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/chat_item_layout.xml" value="0.3333333333333333" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/drawer_navigation_header.xml" value="0.16666666666666666" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_chat.xml" value="0.14743589743589744" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_check_eligibility.xml" value="0.16666666666666666" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_home.xml" value="0.14743589743589744" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_login.xml" value="0.16666666666666666" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_notifiation.xml" value="0.14743589743589744" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.14666666666666667" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_on_boarding2.xml" value="0.14666666666666667" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.14666666666666667" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_on_boarding4.xml" value="0.14666666666666667" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_login.xml" value="0.14743589743589744" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_otp.xml" value="0.16666666666666666" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_payment.xml" value="0.41876430205949655" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_tracking.xml" value="0.16666666666666666" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/fragment_tracking_donation.xml" value="0.13333333333333333" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/layout/notification_item_layout.xml" value="0.3460764587525151" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/menu/bottom_navigation.xml" value="0.14743589743589744" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit5_BuildWeek/Red_Aid/app/src/main/res/menu/drawer_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/Sachin Sharma/AppData/Local/Android/Sdk/platforms/android-31/data/res/drawable/editbox_background.xml" value="0.15864978902953586" />
       </map>
     </option>
   </component>

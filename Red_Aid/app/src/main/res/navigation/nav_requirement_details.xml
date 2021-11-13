@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_requirement_details"
+    app:startDestination="@id/requestBloodFragment">
+
+    <fragment
+        android:id="@+id/requestBloodFragment"
+        android:name="com.avengers.red_aid.views.RequestBloodFragment"
+        android:label="RequestBloodFragment" >
+        <action
+            android:id="@+id/action_requestBloodFragment_to_bloodrequestFragment"
+            app:destination="@id/bloodrequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bloodrequestFragment"
+        android:name="com.avengers.red_aid.views.Appointment.BloodrequestFragment"
+        android:label="fragment_bloodrequest"
+        tools:layout="@layout/fragment_bloodrequest" />
+</navigation>

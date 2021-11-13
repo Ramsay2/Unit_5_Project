@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.avengers.red_aid.R
 import com.avengers.red_aid.databinding.FragmentRequestBloodBinding
 import kotlinx.android.synthetic.main.fragment_request_blood.*
@@ -30,6 +31,14 @@ class RequestBloodFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         color()
         bloodGroup(view)
+
+        val navController = Navigation.findNavController(view)
+
+       requestBloodBinding.btnCheck.setOnClickListener {
+            navController.navigate(R.id.action_requestBloodFragment_to_bloodrequestFragment)
+        }
+
+
         requestBloodBinding.apply {
             etAddress.addTextChangedListener(object : TextWatcher {
 

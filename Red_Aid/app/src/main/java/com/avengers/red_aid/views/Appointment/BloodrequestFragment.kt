@@ -12,16 +12,7 @@ import com.avengers.red_aid.R
 import kotlinx.android.synthetic.main.fragment_bloodrequest.*
 import java.util.ArrayList
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [BloodrequestFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class BloodrequestFragment : Fragment(R.layout.fragment_bloodrequest),BloodReqListener {
 
     private lateinit var recyclerViewbb: RecyclerView
@@ -35,7 +26,7 @@ class BloodrequestFragment : Fragment(R.layout.fragment_bloodrequest),BloodReqLi
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        recyclerViewbb= view?.findViewById(R.id.recyclebb)!!
+        recyclerViewbb= view.findViewById(R.id.recyclebb)!!
         tvblbank.setOnClickListener {
       cvbbsel.visibility=View.VISIBLE
 
@@ -74,6 +65,7 @@ class BloodrequestFragment : Fragment(R.layout.fragment_bloodrequest),BloodReqLi
 
 
     override fun onitemclicked(position: Int, model: BloodReqModel) {
-        val intent= Intent(context,BookingAct::class.java)
-        startActivity(intent)    }
+        val intent= Intent(context,GetBloodAct::class.java)
+        startActivity(intent)
+    }
 }

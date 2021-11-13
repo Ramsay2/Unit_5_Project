@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_donate_blood"
+    app:startDestination="@id/checkEligibilityFragment">
+
+    <fragment
+        android:id="@+id/checkEligibilityFragment"
+        android:name="com.avengers.red_aid.views.CheckEligibilityFragment"
+        android:label="CheckEligibilityFragment" >
+        <action
+            android:id="@+id/action_checkEligibilityFragment_to_eligibleFragment"
+            app:destination="@id/eligibleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eligibleFragment"
+        android:name="com.avengers.red_aid.views.EligibleFragment"
+        android:label="EligibleFragment" >
+        <action
+            android:id="@+id/action_eligibleFragment_to_bloodbankFragment"
+            app:destination="@id/bloodbankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bloodbankFragment"
+        android:name="com.avengers.red_aid.views.Appointment.BloodbankFragment"
+        android:label="BloodbankFragment" />
+</navigation>

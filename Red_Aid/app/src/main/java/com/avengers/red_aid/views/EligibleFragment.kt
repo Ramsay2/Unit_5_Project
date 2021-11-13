@@ -31,7 +31,9 @@ private lateinit var eligibleBinding: FragmentEligibleBinding
         super.onViewCreated(view, savedInstanceState)
 
         val navController = Navigation.findNavController(view)
-
+        eligibleBinding.ivClose.setOnClickListener {
+            navController.navigate(R.id.action_eligibleFragment_to_bloodbankFragment)
+        }
 
     }
 

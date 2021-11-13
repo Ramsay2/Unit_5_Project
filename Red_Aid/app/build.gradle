@@ -10,6 +10,7 @@ plugins {
 android {
     compileSdk 31
 
+
     defaultConfig {
         applicationId "com.avengers.red_aid"
         minSdk 21

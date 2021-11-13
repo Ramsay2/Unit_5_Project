@@ -127,7 +127,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_toStartOf="@id/ivCalender"
                 android:layout_toEndOf="@id/ivTime"
-                android:text="Sunday, 10th Oct, 11:AM" />
+                android:text="Sunday, 15th Nov, 1:00 PM" />
 
         </RelativeLayout>
 
@@ -161,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="32dp"
                 android:layout_toEndOf="@id/ivcircle1"
-                android:text="Blood donated, 10th Oct"
+                android:text="Blood donated, 15th Nov"
                 android:textColor="@color/red_aid_black_200" />
 
             <ImageView

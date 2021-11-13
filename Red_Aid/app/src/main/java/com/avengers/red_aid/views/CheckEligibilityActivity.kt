@@ -10,5 +10,7 @@ class CheckEligibilityActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         checkEligibilityActivity= ActivityCheckEligibilityBinding.inflate(layoutInflater)
         setContentView(checkEligibilityActivity.root)
+
+
     }
 }
