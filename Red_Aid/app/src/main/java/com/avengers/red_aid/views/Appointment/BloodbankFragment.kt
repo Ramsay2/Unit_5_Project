@@ -29,6 +29,11 @@ class BloodbankFragment : Fragment(R.layout.fragment_bloodbank),AppointListener 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         recyclerView= view?.findViewById(R.id.appointrecycle)!!
         buildlist( )
         recyclerview()

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Red_Aid">
         <activity
+            android:name=".views.Appointment.GetBloodAct"
+            android:exported="false" />
+        <activity
+            android:name=".views.Appointment.Apoointbook"
+            android:exported="false" />
+        <activity
             android:name=".views.Appointment.BookingAct"
             android:exported="false" />
         <activity

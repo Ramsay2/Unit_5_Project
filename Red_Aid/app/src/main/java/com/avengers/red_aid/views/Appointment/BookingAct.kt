@@ -127,6 +127,10 @@ class BookingAct : AppCompatActivity() {
                 boo=false
             }
         }
+        btnbook.setOnClickListener {
+            val intentt=Intent(this,Apoointbook::class.java)
+            startActivity(intentt)
+        }
     }
 
     private fun updatelable(calender: Calendar) {

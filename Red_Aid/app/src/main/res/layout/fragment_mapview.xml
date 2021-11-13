@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.Appointment.MapviewFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     Edit Requirment"
+        android:drawableStart="@drawable/vectoredit"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        android:textSize="16sp"
+        android:id="@+id/tveditreq"/>
+    <TextView
+        android:id="@+id/tvblbank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_rectangle_1"
+        android:backgroundTint="#E3FFFB"
+        android:drawableRight="@drawable/vector3"
+        android:text="Blood banks  "
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="687dp"
+        android:layout_below="@+id/tveditreq"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mapview" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Send invite to all"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#DD003C"/>
+
+</RelativeLayout>

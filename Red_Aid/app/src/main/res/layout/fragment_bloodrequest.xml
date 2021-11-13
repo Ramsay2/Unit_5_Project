@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bloodreq"
+    tools:context=".views.Appointment.BloodrequestFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     Edit Requirment"
+        android:drawableStart="@drawable/vectoredit"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        android:textSize="16sp"
+        android:id="@+id/tveditreq"/>
+    <TextView
+        android:id="@+id/tvblbank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_rectangle_1"
+        android:backgroundTint="#E3FFFB"
+        android:drawableRight="@drawable/vector3"
+        android:text="Blood banks  "
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvbbsel"
+        android:layout_below="@+id/tvblbank"
+        android:layout_alignParentEnd="true"
+       android:visibility="invisible"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donors near you"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:background="@drawable/rectangle113"
+                android:gravity="center"
+                android:id="@+id/tvneardonor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Banks"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:background="@drawable/rectangle113"
+                android:gravity="center"
+                android:id="@+id/tvnearbank"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tveditreq"
+        android:layout_margin="26dp"
+        android:id="@+id/recyclebb"/>
+
+
+</RelativeLayout>
