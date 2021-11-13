@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "806652923264",
+    "project_id": "redaid-261a3",
+    "storage_bucket": "redaid-261a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806652923264:android:9568dda437dab83fbd8565",
+        "android_client_info": {
+          "package_name": "com.avengers.red_aid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806652923264-o0olk0cv3ekm5fhvk1htjmrrn9rupa4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.avengers.red_aid",
+            "certificate_hash": "c9c1e3fbd962c7e3773951030380d965f8def4b1"
+          }
+        },
+        {
+          "client_id": "806652923264-g4qihaqtnu1j9ktf7drr4l937jmpnuf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAovS1STA0eTxxq7Od2YNTfLRbm0-slkJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806652923264-g4qihaqtnu1j9ktf7drr4l937jmpnuf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

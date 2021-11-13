@@ -7,7 +7,11 @@
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_arrow_back.xml" value="0.15864978902953586" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.15864978902953586" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.15864978902953586" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_close.xml" value="0.12247557003257328" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_frame_blood_donate.xml" value="0.12247557003257328" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_frame_blood_donate_two.xml" value="0.12247557003257328" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_frame_donate_blood.xml" value="0.1606837606837607" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_frame_five.xml" value="0.12247557003257328" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15864978902953586" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/ic_profile.xml" value="0.1170940170940171" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/drawable/radio_button.xml" value="0.15864978902953586" />
@@ -18,9 +22,12 @@
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_login.xml" value="0.1398148148148148" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_requirement_details.xml" value="0.11348684210526316" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/activity_splash.xml" value="0.10384615384615385" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/appointmentlayout.xml" value="0.11348684210526316" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/drawer_navigation_header.xml" value="0.10384615384615385" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/dropdown_layout.xml" value="0.14743589743589744" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_bloodbank.xml" value="0.11348684210526316" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_check_eligibility.xml" value="0.14743589743589744" />
+        <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_eligible.xml" value="0.13333333333333333" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_home.xml" value="0.12" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_login.xml" value="0.1796875" />
         <entry key="..\:/Local Disk Sachin/Unit_5_Project/Red_Aid/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.10384615384615385" />
