@@ -1,4 +1,4 @@
-package com.avengers.red_aid
+package com.avengers.red_aid.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

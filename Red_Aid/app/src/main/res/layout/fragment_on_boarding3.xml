@@ -6,22 +6,22 @@
     tools:context=".views.OnBoardingFragment3">
 
     <ImageView
-        android:id="@+id/ivOnBoardingFragment1Logo"
+        android:id="@+id/ivOnBoardingFragment3Logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="250dp"
+        android:layout_above="@id/tvOnBoardingFragment3Text"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/on_boarding3_logo" />
 
 
     <TextView
-        android:id="@+id/tvOnBoardingFragment1Text"
+        android:id="@+id/tvOnBoardingFragment3Text"
         style="@style/TextAppearance.MyApp.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginHorizontal="90dp"
-        android:layout_marginTop="450dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="64dp"
         android:text=" Help others by accepting blood donation requests from people in need and be a Superhero"
         android:textAlignment="center"
         android:textColor="@color/black" />

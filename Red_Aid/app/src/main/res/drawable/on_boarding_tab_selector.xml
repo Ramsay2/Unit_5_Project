@@ -3,5 +3,5 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/on_boarding_pager_dot_selected"
         android:state_selected="true"/>
-    <item android:drawable="@drawable/on_boarding_pager_dot_activated" />
+    <item android:drawable="@drawable/on_boarding_pager_dot_default" />
 </selector>

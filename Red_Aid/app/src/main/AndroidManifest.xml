@@ -10,13 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Red_Aid">
         <activity
-            android:name=".views.Appointment.GetBloodAct"
-            android:exported="false" />
+            android:name=".views.IndividiualChatActivity"
+            android:exported="true" />
         <activity
-            android:name=".views.Appointment.Apoointbook"
-            android:exported="false" />
-        <activity
-            android:name=".views.Appointment.BookingAct"
+            android:name=".views.RequirementDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".views.HomeActivity"
@@ -28,7 +25,7 @@
             android:name=".views.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".CheckEligibilityActivity"
+            android:name=".views.CheckEligibilityActivity"
             android:exported="true" />
         <activity
             android:name=".views.SplashActivity"

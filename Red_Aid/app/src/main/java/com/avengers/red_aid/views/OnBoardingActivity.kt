@@ -3,6 +3,8 @@ package com.avengers.red_aid.views
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.viewpager2.widget.ViewPager2
@@ -18,7 +20,10 @@ class OnBoardingActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_on_boarding)
+
         initViews()
         setViewPagerAdapter()
         mTvSkip?.setOnClickListener {
