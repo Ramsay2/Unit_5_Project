@@ -19,4 +19,5 @@
         android:name="com.avengers.red_aid.views.OtpFragment"
         android:label="fragment_otp"
         tools:layout="@layout/fragment_otp" />
+
 </navigation>
