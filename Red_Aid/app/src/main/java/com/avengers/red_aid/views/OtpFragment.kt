@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -40,8 +41,9 @@ class OtpFragment : Fragment() {
                 }
 
                 override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                    if (p0.toString().length > 0) {
+                    if (p0.toString().isNotEmpty()) {
                         mBtnVerify!!.isClickable = true
+                        Log.d("TAG", "onTextChanged: changed")
                         mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_700))
                     } else {
                         mBtnVerify!!.isClickable = false

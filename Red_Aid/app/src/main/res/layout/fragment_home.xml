@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".views.HomeFragment">
 
+    tools:context=".views.HomeFragment">
 
     <ImageView
         android:id="@+id/tvText"
@@ -27,16 +27,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-android:gravity="center"
+        android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="2">
 
-       <ImageView
-           android:id="@+id/ivframe3"
-           android:layout_width="199dp"
-           android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/ivframe3"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
 
-           android:src="@drawable/frame_three" />
+            android:src="@drawable/frame_three" />
 
         <ImageView
             android:id="@+id/ivframe4"
