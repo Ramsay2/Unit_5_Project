@@ -93,6 +93,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:itemIconTint="@drawable/bottom_nav_selector"
                 android:background="?android:attr/windowBackground"
                 android:paddingVertical="5dp"
                 app:menu="@menu/bottom_navigation" />
