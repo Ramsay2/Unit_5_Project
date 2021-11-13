@@ -61,6 +61,7 @@
         app:prefixTextAppearance="@style/TextAppearance.MyApp.BodyBold">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMobileNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
