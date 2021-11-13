@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.Appointment.BookingAct">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rela1">
+
+        <ImageView
+            android:id="@+id/ivbloodbank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bloodbank" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_marginStart="24dp"
+            android:id="@+id/ivback"
+            android:layout_marginTop="16dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivbloodbank"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/rell2"
+            android:background="@drawable/rrectangle"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donors"
+                android:textSize="18sp"
+                android:id="@+id/tvdonor"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   100+"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tvdonor"
+                android:drawableStart="@drawable/vectorr"
+                android:id="@+id/tvtotal"
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivbloodbank"
+            android:layout_toRightOf="@+id/rell2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/rell3"
+            android:background="@drawable/rrectangle"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establishment"
+                android:textSize="18sp"
+                android:id="@+id/tvestab"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   10 Years"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tvestab"
+                android:drawableStart="@drawable/image11"
+                android:id="@+id/tvyears"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivbloodbank"
+            android:layout_toRightOf="@+id/rell3"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/rrectangle"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Reviews"
+                android:textSize="18sp"
+                android:id="@+id/tvreview"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   4.5"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tvreview"
+                android:drawableStart="@drawable/vector2"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schdule"
+            android:layout_below="@+id/rell2"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="24dp"
+            android:textSize="20sp"
+            android:id="@+id/tvsvhdule"/>
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rell2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:visibility="gone"
+            android:id="@+id/cvcalender"/>
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rell2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:backgroundTint="#E3FFFB"
+            android:drawableRight="@drawable/vector3"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time slots"
+            android:layout_below="@+id/tvsvhdule"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="24dp"
+            android:textSize="17sp"
+            android:id="@+id/tvslots"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:layout_below="@+id/tvslots"
+            android:layout_marginTop="20dp"
+            android:text="10:00 AM"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="26dp"
+            android:id="@+id/tvtimes1"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:layout_below="@+id/tvslots"
+            android:layout_marginTop="20dp"
+            android:text="11:00 AM"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tvtimes1"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvtimes2"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:layout_below="@+id/tvslots"
+            android:layout_marginTop="20dp"
+            android:text="1:00 PM"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tvtimes2"
+            android:layout_marginStart="8dp"
+            android:id="@+id/tvtimes3"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:layout_below="@+id/tvtimes1"
+            android:layout_marginTop="20dp"
+            android:text="2:00 PM"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="26dp"
+            android:id="@+id/tvtimes4"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:layout_below="@+id/tvtimes1"
+            android:layout_marginTop="20dp"
+            android:text="3:00 PM"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tvtimes1"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvtimes5"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:layout_below="@+id/tvtimes1"
+            android:layout_marginTop="20dp"
+            android:text="4:00 PM"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tvtimes2"
+            android:layout_marginStart="8dp"
+            android:id="@+id/tvtimes6"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:layout_below="@+id/tvtimes4"
+            android:layout_marginTop="20dp"
+            android:text="6:00 PM"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="26dp"
+            android:id="@+id/tvtimes7"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:layout_below="@+id/tvtimes4"
+            android:layout_marginTop="20dp"
+            android:text="7:00 PM"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tvtimes1"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvtimes8"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_rectangle_1"
+            android:layout_below="@+id/tvtimes4"
+            android:layout_marginTop="20dp"
+            android:text="8:00 PM"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tvtimes2"
+            android:layout_marginStart="8dp"
+            android:id="@+id/tvtimes9"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvtimes7"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:id="@+id/btnbook"
+            android:text="Book Appointment"
+            android:backgroundTint="#DD003C"/>
+
+    </RelativeLayout>
+
+</ScrollView>
