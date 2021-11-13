@@ -32,6 +32,7 @@ private lateinit var eligibleBinding: FragmentEligibleBinding
 
         val navController = Navigation.findNavController(view)
 
+
     }
 
 }

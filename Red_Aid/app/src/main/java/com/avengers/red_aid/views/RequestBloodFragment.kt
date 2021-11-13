@@ -1,6 +1,8 @@
 package com.avengers.red_aid.views
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,6 +30,32 @@ class RequestBloodFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         color()
         bloodGroup(view)
+        requestBloodBinding.apply {
+            etAddress.addTextChangedListener(object : TextWatcher {
+
+                override fun afterTextChanged(s: Editable) {}
+
+                override fun beforeTextChanged(
+                    s: CharSequence, start: Int,
+                    count: Int, after: Int
+                ) {
+                }
+
+                override fun onTextChanged(
+                    s: CharSequence, start: Int,
+                    before: Int, count: Int
+                ) {
+                    if (s.isNotEmpty()) {
+                        btnCheck.isClickable = true
+                        btnCheck.setBackgroundColor(btnCheck.resources.getColor(R.color.red_aid_red_700))
+                    } else {
+                        btnCheck.isClickable = false
+                        btnCheck.setBackgroundColor(btnCheck.resources.getColor(R.color.red_aid_red_200))
+                    }
+                }
+            })
+
+        }
     }
 
     private fun bloodGroup(view: View) {
