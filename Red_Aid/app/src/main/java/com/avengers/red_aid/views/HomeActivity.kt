@@ -1,6 +1,8 @@
 package com.avengers.red_aid.views
 
 
+import android.content.Context
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -10,6 +12,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.avengers.red_aid.R
+import com.google.android.material.badge.BadgeDrawable
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_home.*
@@ -18,7 +21,8 @@ import kotlinx.android.synthetic.main.activity_home.*
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var selectedFragment: Fragment
-
+    var badgeDrawableChat: BadgeDrawable? = null
+    var badgeDrawableNotification: BadgeDrawable? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +43,27 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             ActionBarDrawerToggle(this, drawer_layout, R.string.Open_Drawer, R.string.Close_Drawer)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
+
+//        setNotifacationForChat(bottomNavigationView, 5)
+//        setNotifacationForNotification(bottomNavigationView, 5)
+    }
+
+    private fun setNotifacationForNotification(bottomNavigationView: BottomNavigationView?, value: Int) {
+        badgeDrawableNotification = bottomNavigationView?.getOrCreateBadge(R.id.nav_notification)
+        badgeDrawableNotification?.backgroundColor = resources.getColor(R.color.red_aid_green_500)
+        badgeDrawableNotification?.badgeTextColor = Color.WHITE
+        badgeDrawableNotification?.number = value
+        badgeDrawableNotification?.maxCharacterCount = 2
+        badgeDrawableNotification?.setVisible(true)
+    }
+
+    private fun setNotifacationForChat(bottomNavigationView: BottomNavigationView, value: Int) {
+        badgeDrawableChat = bottomNavigationView.getOrCreateBadge(R.id.nav_chats)
+        badgeDrawableChat?.backgroundColor = resources.getColor(R.color.red_aid_green_500)
+        badgeDrawableChat?.badgeTextColor = Color.WHITE
+        badgeDrawableChat?.number = value
+        badgeDrawableChat?.maxCharacterCount = 2
+        badgeDrawableChat?.setVisible(true)
     }
 
     private fun onClickOperations() {
@@ -55,11 +80,21 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private val navListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
-            selectedFragment = when (item.itemId) {
-                R.id.nav_home -> HomeFragment()
-                R.id.nav_chats -> HomeFragment()
-                R.id.nav_support -> HomeFragment()
-                R.id.nav_notification -> HomeFragment()
+            when (item.itemId) {
+                R.id.nav_home ->
+                    selectedFragment = HomeFragment()
+                R.id.nav_chats -> {
+                    badgeDrawableChat?.clearNumber()
+                    badgeDrawableChat?.isVisible = false
+                    selectedFragment = ChatFragment()
+                }
+                R.id.nav_support ->
+                    selectedFragment = HomeFragment()
+                R.id.nav_notification -> {
+                    badgeDrawableNotification?.clearNumber()
+                    badgeDrawableNotification?.isVisible = false
+                    selectedFragment = NotificationFragment()
+                }
                 else -> HomeFragment()
             }
             supportFragmentManager.beginTransaction()
@@ -73,7 +108,11 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.trackDonations -> Toast.makeText(this, "trackDonations", Toast.LENGTH_SHORT).show()
             R.id.rewards -> Toast.makeText(this, "rewards", Toast.LENGTH_SHORT).show()
             R.id.register -> Toast.makeText(this, "register", Toast.LENGTH_SHORT).show()
-            R.id.previousRequirements -> Toast.makeText(this, "previousRequirements", Toast.LENGTH_SHORT).show()
+            R.id.previousRequirements -> Toast.makeText(
+                this,
+                "previousRequirements",
+                Toast.LENGTH_SHORT
+            ).show()
             R.id.settings -> Toast.makeText(this, "settings", Toast.LENGTH_SHORT).show()
             R.id.logout -> Toast.makeText(this, "logout", Toast.LENGTH_SHORT).show()
         }

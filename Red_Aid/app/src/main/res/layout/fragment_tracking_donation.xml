@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.TrackingDonationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp">
+
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/loginToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="24dp"
+                app:navigationIconTint="@color/black"
+                app:title="Appointment details"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/TextAppearance.MyApp.Heading3" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_location" />
+
+            <ImageView
+                android:id="@+id/ivDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_direction_right" />
+
+            <TextView
+                android:id="@+id/tvAppointmentAt"
+                style="@style/TextAppearance.MyApp.Button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_toStartOf="@id/ivDirection"
+                android:layout_toEndOf="@id/ivLocation"
+                android:text="Appointment At" />
+
+            <TextView
+                android:id="@+id/tvAppointmentPlace"
+                style="@style/TextAppearance.MyApp.BodyBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAppointmentAt"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@id/ivDirection"
+                android:layout_toEndOf="@id/ivLocation"
+                android:text="Spring Meadows Blood Bank" />
+
+            <TextView
+                android:id="@+id/tvAppointmentAddress"
+                style="@style/TextAppearance.MyApp.BodyBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAppointmentPlace"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@id/ivDirection"
+                android:layout_toEndOf="@id/ivLocation"
+                android:text="B-1/625 Basement, Below FBB \nJanakpuri, New Delhi-110058"
+                android:textColor="@color/red_aid_black_200" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="40dp">
+
+            <ImageView
+                android:id="@+id/ivTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_clock" />
+
+            <ImageView
+                android:id="@+id/ivCalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_google_calendar" />
+
+            <TextView
+                android:id="@+id/tvTimings"
+                style="@style/TextAppearance.MyApp.Button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_toStartOf="@id/ivCalender"
+                android:layout_toEndOf="@id/ivTime"
+                android:text="Timings" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/TextAppearance.MyApp.BodyBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTimings"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@id/ivCalender"
+                android:layout_toEndOf="@id/ivTime"
+                android:text="Sunday, 10th Oct, 11:AM" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/red_aid_black_100" />
+
+        <TextView
+            style="@style/TextAppearance.MyApp.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="Track You Donated Blood Here" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp">
+
+            <ImageView
+                android:id="@+id/ivcircle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_circle_tracking_donation" />
+
+            <TextView
+                android:id="@+id/tvDonated"
+                style="@style/TextAppearance.MyApp.Button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_toEndOf="@id/ivcircle1"
+                android:text="Blood donated, 10th Oct"
+                android:textColor="@color/red_aid_black_200" />
+
+            <ImageView
+                android:id="@+id/ivline2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/ivcircle2"
+                android:layout_below="@id/ivcircle1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_line_tracking_donation"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivcircle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tvSTD"
+                android:background="@drawable/ic_circle_tracking_donation"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvSTD"
+                style="@style/TextAppearance.MyApp.Button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDonated"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="48dp"
+                android:layout_toEndOf="@id/ivcircle1"
+                android:text="Testing for STD"
+                android:textColor="@color/red_aid_black_200" />
+
+            <ImageView
+                android:id="@+id/ivline3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/ivcircle3"
+                android:layout_below="@id/ivcircle2"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_line_tracking_donation"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivcircle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tvInfection"
+                android:background="@drawable/ic_circle_tracking_donation"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/tvInfection"
+                style="@style/TextAppearance.MyApp.Button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSTD"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="48dp"
+                android:layout_toEndOf="@id/ivcircle1"
+                android:text="Testing for other infections"
+                android:textColor="@color/red_aid_black_200" />
+
+            <ImageView
+                android:id="@+id/ivline4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/ivcircle4"
+                android:layout_below="@id/ivcircle3"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_line_tracking_donation"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivcircle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tvStored"
+                android:background="@drawable/ic_circle_tracking_donation"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/tvStored"
+                style="@style/TextAppearance.MyApp.Button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvInfection"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="48dp"
+                android:layout_toEndOf="@id/ivcircle1"
+                android:text="Plasma, RCB and Plattelets \nseperated and stored"
+                android:textColor="@color/red_aid_black_200" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bottomNavigationContainer"
+            android:layout_width="match_parent"
+            android:elevation="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigation"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                app:itemIconTint="@drawable/bottom_nav_selector"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/windowBackground"
+                android:paddingVertical="5dp"
+                app:menu="@menu/bottom_navigation" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+</layout>

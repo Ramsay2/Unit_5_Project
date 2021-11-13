@@ -5,25 +5,22 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
-import androidx.fragment.app.Fragment
 import com.avengers.red_aid.R
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
-import com.google.firebase.auth.PhoneAuthCredential
-import com.google.firebase.auth.PhoneAuthProvider
 
 class OtpFragment : Fragment() {
 
     var mBtnVerify: Button? = null
     var mOtpField4: EditText? = null
-    lateinit var auth: FirebaseAuth
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -36,66 +33,29 @@ class OtpFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setViews(view)
-        auth = FirebaseAuth.getInstance()
-        val bundle = Bundle()
-        val storedVerificationId = bundle.getString("storedVerificationId")
-
-
-        mBtnVerify?.setOnClickListener {
-            val otp = view.findViewById<EditText>(R.id.etOTP).text.trim().toString()
-            if (otp.isNotEmpty()) {
-                val credential: PhoneAuthCredential = PhoneAuthProvider.getCredential(
-                    storedVerificationId.toString(), otp
-                )
-                signInWithPhoneAuthCredential(credential)
-            } else {
-                Toast.makeText(context, "Enter OTP", Toast.LENGTH_SHORT).show()
-            }
-        }
-
-
         mBtnVerify?.setOnClickListener {
             val intent = Intent(context, HomeActivity::class.java)
             startActivity(intent)
         }
-        mOtpField4?.addTextChangedListener {
-            object : TextWatcher {
-                override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                }
+        mOtpField4!!.addTextChangedListener(object : TextWatcher {
 
-                override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                    if (p0.toString().isNotEmpty()) {
-                        mBtnVerify!!.isClickable = true
-                        Log.d("TAG", "onTextChanged: changed")
-                        mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_700))
-                    } else {
-                        mBtnVerify!!.isClickable = false
-                        mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_200))
-                    }
-                }
+            override fun afterTextChanged(s: Editable) {}
 
-                override fun afterTextChanged(p0: Editable?) {
-                }
-
+            override fun beforeTextChanged(s: CharSequence, start: Int,
+                                           count: Int, after: Int) {
             }
-        }
-    }
 
-    private fun signInWithPhoneAuthCredential(credential: PhoneAuthCredential) {
-        auth.signInWithCredential(credential)
-            .addOnCompleteListener(requireActivity()) { task ->
-                if (task.isSuccessful) {
-                    val intent = Intent(context, HomeActivity::class.java)
-                    startActivity(intent)
-
+            override fun onTextChanged(s: CharSequence, start: Int,
+                                       before: Int, count: Int) {
+                if (s.isNotEmpty()) {
+                    mBtnVerify!!.isClickable = true
+                    mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_700))
                 } else {
-                    // Sign in failed, display a message and update the UI
-                    if (task.exception is FirebaseAuthInvalidCredentialsException) {
-                        // The verification code entered was invalid
-                        Toast.makeText(context, "Invalid OTP", Toast.LENGTH_SHORT).show()
-                    }
+                    mBtnVerify!!.isClickable = false
+                    mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_200))
                 }
             }
+        })
     }
 
     private fun setViews(view: View) {
