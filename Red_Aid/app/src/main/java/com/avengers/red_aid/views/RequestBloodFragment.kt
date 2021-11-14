@@ -64,6 +64,10 @@ class RequestBloodFragment : Fragment() {
                 }
             })
 
+            etUploadPrescription.setOnClickListener {
+
+            }
+
         }
     }
 
