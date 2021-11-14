@@ -26,6 +26,7 @@
         <activity
             android:name=".views.Appointment.BookingAct"
             android:exported="true" />
+
         <activity
             android:name=".views.RequirementDetailsActivity"
             android:exported="false" />

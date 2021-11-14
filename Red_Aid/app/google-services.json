@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "806652923264",
-    "project_id": "redaid-261a3",
-    "storage_bucket": "redaid-261a3.appspot.com"
+    "project_number": "806856760252",
+    "project_id": "redaidproject",
+    "storage_bucket": "redaidproject.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:806652923264:android:9568dda437dab83fbd8565",
+        "mobilesdk_app_id": "1:806856760252:android:d2e24df4b195c08160e9b9",
         "android_client_info": {
           "package_name": "com.avengers.red_aid"
         }
       },
       "oauth_client": [
         {
-          "client_id": "806652923264-o0olk0cv3ekm5fhvk1htjmrrn9rupa4f.apps.googleusercontent.com",
+          "client_id": "806856760252-in2oop98rh3rm5bhdsl3gshooevm7r2u.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.avengers.red_aid",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "806652923264-g4qihaqtnu1j9ktf7drr4l937jmpnuf4.apps.googleusercontent.com",
+          "client_id": "806856760252-ubkbf3ui7krflfjf4l7m5ej0mbs2e7h9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAovS1STA0eTxxq7Od2YNTfLRbm0-slkJo"
+          "current_key": "AIzaSyAwY8txVALG8XC2H7wx3YuPddHEPBMGVUg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "806652923264-g4qihaqtnu1j9ktf7drr4l937jmpnuf4.apps.googleusercontent.com",
+              "client_id": "806856760252-ubkbf3ui7krflfjf4l7m5ej0mbs2e7h9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

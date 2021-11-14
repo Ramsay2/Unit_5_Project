@@ -35,6 +35,7 @@ private lateinit var eligibleBinding: FragmentEligibleBinding
             navController.navigate(R.id.action_eligibleFragment_to_bloodbankFragment)
         }
 
+
     }
 
 }

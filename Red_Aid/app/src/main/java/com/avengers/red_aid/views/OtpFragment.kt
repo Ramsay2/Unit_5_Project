@@ -5,21 +5,25 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.core.content.ContextCompat
-import androidx.core.widget.addTextChangedListener
+import androidx.fragment.app.Fragment
 import com.avengers.red_aid.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.PhoneAuthCredential
+import com.google.firebase.auth.PhoneAuthProvider
 
 class OtpFragment : Fragment() {
 
     var mBtnVerify: Button? = null
-    var mOtpField4: EditText? = null
+    var mOtpField6: EditText? = null
+
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,20 +37,55 @@ class OtpFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setViews(view)
-        mBtnVerify?.setOnClickListener {
+
+        auth = FirebaseAuth.getInstance()
+
+
+        // get storedVerificationId from the intent
+        val  storedVerificationId = arguments?.getString("storedVerificationId")
+
+
+        Log.d("TAG", "onViewCreated: $storedVerificationId")
+
+        // fill otp and call the on click on button
+        view.findViewById<Button>(R.id.btnOTPFragmentVerify).setOnClickListener {
+            val otp ="${view.findViewById<EditText>(R.id.otpField1).text.trim()}" +
+                    "${view.findViewById<EditText>(R.id.otpField2).text.trim()}" +
+                    "${view.findViewById<EditText>(R.id.otpField3).text.trim()}" +
+                    "${view.findViewById<EditText>(R.id.otpField4).text.trim()}" +
+                    "${view.findViewById<EditText>(R.id.otpField5).text.trim()}" +
+                    "${view.findViewById<EditText>(R.id.otpField6).text.trim()}"
+
+           // val otp = view.findViewById<EditText>(R.id.etOTP).text.trim().toString()
+            if (otp.isNotEmpty()) {
+                val credential: PhoneAuthCredential = PhoneAuthProvider.getCredential(
+                    storedVerificationId.toString(), otp
+                )
+                signInWithPhoneAuthCredential(credential)
+            } else {
+                Toast.makeText(context, "Enter OTP", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+
+     /*   mBtnVerify?.setOnClickListener {
             val intent = Intent(context, HomeActivity::class.java)
             startActivity(intent)
-        }
-        mOtpField4!!.addTextChangedListener(object : TextWatcher {
+        }*/
+        mOtpField6!!.addTextChangedListener(object : TextWatcher {
 
             override fun afterTextChanged(s: Editable) {}
 
-            override fun beforeTextChanged(s: CharSequence, start: Int,
-                                           count: Int, after: Int) {
+            override fun beforeTextChanged(
+                s: CharSequence, start: Int,
+                count: Int, after: Int
+            ) {
             }
 
-            override fun onTextChanged(s: CharSequence, start: Int,
-                                       before: Int, count: Int) {
+            override fun onTextChanged(
+                s: CharSequence, start: Int,
+                before: Int, count: Int
+            ) {
                 if (s.isNotEmpty()) {
                     mBtnVerify!!.isClickable = true
                     mBtnVerify!!.setBackgroundColor(mBtnVerify!!.resources.getColor(R.color.red_aid_red_700))
@@ -60,7 +99,25 @@ class OtpFragment : Fragment() {
 
     private fun setViews(view: View) {
         mBtnVerify = view.findViewById(R.id.btnOTPFragmentVerify)
-        mOtpField4 = view.findViewById(R.id.otpField4)
+        mOtpField6 = view.findViewById(R.id.otpField6)
     }
 
+    private fun signInWithPhoneAuthCredential(credential: PhoneAuthCredential) {
+        activity?.let {
+            auth.signInWithCredential(credential)
+                .addOnCompleteListener(it) { task ->
+                    if (task.isSuccessful) {
+                        val intent = Intent(context, HomeActivity::class.java)
+                        startActivity(intent)
+
+                    } else {
+                        // Sign in failed, display a message and update the UI
+                        if (task.exception is FirebaseAuthInvalidCredentialsException) {
+                            // The verification code entered was invalid
+                            Toast.makeText(context, "Invalid OTP", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
+        }
+    }
 }

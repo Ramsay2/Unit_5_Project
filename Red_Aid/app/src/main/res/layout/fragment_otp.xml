@@ -51,45 +51,69 @@
         android:gravity="center">
 
         <EditText
-            android:id="@+id/etOTP"
+            android:id="@+id/otpField1"
             style="@style/TextAppearance.MyApp.SubHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20sp"
+            android:layout_marginEnd="10sp"
             android:hint="0"
-            android:maxLength="1"
             android:inputType="number"
-            android:paddingHorizontal="30sp" />
+            android:paddingHorizontal="20sp" />
+        <!-- android:maxLength="1"-->
 
         <EditText
+            android:id="@+id/otpField2"
             style="@style/TextAppearance.MyApp.SubHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20sp"
-            android:maxLength="1"
+            android:layout_marginEnd="10sp"
             android:hint="0"
             android:inputType="number"
-            android:paddingHorizontal="30sp" />
+            android:maxLength="1"
+            android:paddingHorizontal="20sp" />
 
         <EditText
+            android:id="@+id/otpField3"
             style="@style/TextAppearance.MyApp.SubHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLength="1"
-            android:layout_marginEnd="20sp"
+            android:layout_marginEnd="10sp"
             android:hint="0"
             android:inputType="number"
-            android:paddingHorizontal="30sp" />
+            android:maxLength="1"
+            android:paddingHorizontal="20sp" />
 
         <EditText
             android:id="@+id/otpField4"
             style="@style/TextAppearance.MyApp.SubHeading"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:hint="0"
+            android:inputType="number"
             android:maxLength="1"
+            android:paddingHorizontal="20sp" />
+
+        <EditText
+            android:id="@+id/otpField5"
+            style="@style/TextAppearance.MyApp.SubHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingHorizontal="20sp" />
+
+        <EditText
+            android:id="@+id/otpField6"
+            style="@style/TextAppearance.MyApp.SubHeading"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="0"
             android:inputType="number"
-            android:paddingHorizontal="30sp" />
+            android:maxLength="1"
+            android:paddingHorizontal="20sp" />
 
     </LinearLayout>
 
