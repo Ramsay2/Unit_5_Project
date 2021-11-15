@@ -37,25 +37,23 @@ class RequestBloodFragment : Fragment() {
     private lateinit var requestBloodBinding: FragmentRequestBloodBinding
     private var imagePath: String? = null
 
-    private val launchGallery : ActivityResultLauncher<Intent> = registerForActivityResult(
-             ActivityResultContracts.StartActivityForResult(), ActivityResultCallback<ActivityResult>() {
-                @Override
-                fun onActivityResult(result:ActivityResult) {
-
-                    if (result.data != null) {
-                        val selectedImageUri : Uri = result.data!!.data!!
-                        try {
-                            getImagePathFromUri(selectedImageUri)
-
-                            requestBloodBinding.etUploadPrescription.setText("imagePath" )
-
-                        } catch (e: FileNotFoundException) {
-                            e.printStackTrace();
-                        }
-
-                    }
-                }
-            }
+    private val launchGallery: ActivityResultLauncher<Intent> = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult(), ActivityResultCallback<ActivityResult>() {
+            requestBloodBinding.etUploadPrescription.setText("prescription.jpg")
+//            @Override
+//            fun onActivityResult(result: ActivityResult) {
+//                Log.d("Kunal", "onActivityResult: 1")
+//                if (result.getData() != null) {
+//                    val selectedImageUri: Uri = result.data!!.data!!
+//                    try {
+//                        getImagePathFromUri(selectedImageUri)
+//                        requestBloodBinding.etUploadPrescription.text = imagePath as Editable
+//                    } catch (e: FileNotFoundException) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+        }
     );
 
 
