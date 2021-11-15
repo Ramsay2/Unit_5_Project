@@ -15,6 +15,7 @@
         android:layout_marginTop="26dp"
         android:textSize="16sp"
         android:id="@+id/tveditreq"/>
+
     <TextView
         android:id="@+id/tvblbank"
         android:layout_width="wrap_content"

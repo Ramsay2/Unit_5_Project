@@ -52,7 +52,10 @@ class LoginFragment() : Fragment() {
        // val navController = Navigation.findNavController(view)
 
         auth = FirebaseAuth.getInstance()
+        auth.firebaseAuthSettings.setAppVerificationDisabledForTesting(true)
         signIn(view)
+
+
         mTvGetOTP = view.findViewById<Button>(R.id.btnOTP)
         mMobileNumber = view.findViewById<TextInputEditText>(R.id.etMobileNumber)
         mTvGetOTP?.setOnClickListener {

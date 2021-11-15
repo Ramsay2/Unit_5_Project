@@ -55,7 +55,7 @@ class PaymentFragment : Fragment() {
 
             btnPay.setOnClickListener {
 
-                val intent = Intent(context, Apoointbook::class.java)
+                val intent = Intent(context, PaymentSuccessfulActivity::class.java)
                 startActivity(intent)
             }
 

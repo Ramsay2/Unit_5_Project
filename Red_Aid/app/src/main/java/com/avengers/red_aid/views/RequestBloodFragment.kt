@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -41,14 +42,17 @@ class RequestBloodFragment : Fragment() {
                 @Override
                 fun onActivityResult(result:ActivityResult) {
 
-                    if (result.getData() != null) {
+                    if (result.data != null) {
                         val selectedImageUri : Uri = result.data!!.data!!
                         try {
                             getImagePathFromUri(selectedImageUri)
-                            requestBloodBinding.etUploadPrescription.text = imagePath as Editable
+
+                            requestBloodBinding.etUploadPrescription.setText("imagePath" )
+
                         } catch (e: FileNotFoundException) {
                             e.printStackTrace();
                         }
+
                     }
                 }
             }

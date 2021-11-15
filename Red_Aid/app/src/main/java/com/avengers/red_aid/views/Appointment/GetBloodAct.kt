@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.avengers.red_aid.R
+import com.avengers.red_aid.views.PaymentActivity
 import com.avengers.red_aid.views.TrackingDriverActivity
 import kotlinx.android.synthetic.main.activity_get_blood.*
 
@@ -21,7 +22,8 @@ class GetBloodAct : AppCompatActivity() {
         }
 
         btngetblood.setOnClickListener {
-            val intent = Intent(this,TrackingDriverActivity::class.java)
+
+            val intent = Intent(this,PaymentActivity::class.java)
             startActivity(intent)
         }
         ivsub.setOnClickListener {
